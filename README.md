@@ -1,5 +1,4 @@
 # python_app_clima
-# python_app_clima
 
 ## Telas:
 
