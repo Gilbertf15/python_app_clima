@@ -7,4 +7,7 @@ aplicação para acessar o clima de determinada cidade , passando como parãmetr
 ## Telas:
 
 <img align="center"
+    src="img_rmd/tela1.png"/>
+    
+<img align="center"
     src="img_rmd/Tela.png"/>
