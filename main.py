@@ -1,6 +1,6 @@
 import requests
 
-from tkinter import *
+from tkinter import PhotoImage
 import customtkinter as ctk
 
 #ctk.set_appearance_mode('dark')
@@ -14,7 +14,7 @@ class Main_climate:
         self.label1 = ctk.CTkLabel(self.loop,text="Weather Forecast App", font=("Times New Roman", 15))
         self.label1.pack()
         
-        self.bg = PhotoImage(file='./img_climate/background.png')
+        self.bg = PhotoImage(file='img_climate/background.png')
         self.label_bg = ctk.CTkLabel(self.loop, text='',image=self.bg)
         self.label_bg.place(x=0, y=50)
         self.entry1 = ctk.CTkEntry(self.loop, placeholder_text='City_name,Us', font=('  Times New Roman', 10), width=200)
@@ -56,14 +56,14 @@ class Main_climate:
                 case 'clear_day':
                     print('dia limpo')
                     self.acess_weather()
-                    imagem_p = PhotoImage(file="./img_climate/sol-removebg-preview.png")
+                    imagem_p = PhotoImage(file="img_climate/sol-removebg-preview.png")
                     label_nublado = ctk.CTkLabel(self.loop, text=None,image=imagem_p)    
                     label_nublado.place(x=220, y=60)
                     
                 case 'storm' :
                     print('tempestade')
                     self.acess_weather()
-                    imagem_p = PhotoImage(file="./img_climate/chuva-removebg-preview.png")
+                    imagem_p = PhotoImage(file="img_climate/chuva-removebg-preview.png")
                     label_nublado = ctk.CTkLabel(self.loop, text=None,image=imagem_p)
                     label_nublado.place(x=220, y=60)
                     
@@ -71,21 +71,21 @@ class Main_climate:
                 case 'snow':
                     print('neve')
                     self.acess_weather()
-                    imagem_p = PhotoImage(file="./img_climate/neve-removebg-preview.png")
+                    imagem_p = PhotoImage(file="img_climate/neve-removebg-preview.png")
                     label_nublado = ctk.CTkLabel(self.loop, text=None,image=imagem_p)
                     label_nublado.place(x=220, y=60)
 
                 case 'hail':
                     print('granizo')
                     self.acess_weather()
-                    imagem_p = PhotoImage(file="./img_climate/neve-removebg-preview.png")
+                    imagem_p = PhotoImage(file="img_climate/neve-removebg-preview.png")
                     label_nublado = ctk.CTkLabel(self.loop, text=None,image=imagem_p)
                     label_nublado.place(x=220, y=60)
 
                 case 'cloudly_day':
                     print('nublado dia ')
                     self.acess_weather()
-                    imagem_p = PhotoImage(file="./img_climate/sol_nublado-removebg-preview.png")
+                    imagem_p = PhotoImage(file="img_climate/sol_nublado-removebg-preview.png")
                     label_nublado = ctk.CTkLabel(self.loop, text=None,image=imagem_p)
                     label_nublado.place(x=220, y=60)
                     
@@ -94,14 +94,14 @@ class Main_climate:
                 case 'rain':
                     print('chuva')
                     self.acess_weather()
-                    imagem_p = PhotoImage(file="./img_climate/chuva-removebg-preview.png")
+                    imagem_p = PhotoImage(file="img_climate/chuva-removebg-preview.png")
                     label_nublado = ctk.CTkLabel(self.loop, text=None,image=imagem_p)
                     label_nublado.place(x=220, y=60)
 
                 case 'cloud':
                     print('nublado di')
                     self.acess_weather()
-                    imagem_p = PhotoImage(file="./img_climate/sol_nublado-removebg-preview.png")
+                    imagem_p = PhotoImage(file="img_climate/sol_nublado-removebg-preview.png")
                     label_nublado = ctk.CTkLabel(self.loop, text=None, image=imagem_p)
                     label_nublado.place(x=220, y=60)
 
@@ -119,42 +119,42 @@ class Main_climate:
                 case 'clear_night':
                     print('noite limpo')
                     self.acess_weather()
-                    imagem_p = PhotoImage(file="./img_climate/lua-removebg-preview.png")
+                    imagem_p = PhotoImage(file="img_climate/lua-removebg-preview.png")
                     label_nublado = ctk.CTkLabel(self.loop, text=None,image=imagem_p)
                     label_nublado.place(x=220, y=60)
 
                 case 'storm' :
                     print('tempestade')
                     self.acess_weather()
-                    imagem_p = PhotoImage(file="./img_climate/chuva-removebg-preview.png")
+                    imagem_p = PhotoImage(file="img_climate/chuva-removebg-preview.png")
                     label_nublado = ctk.CTkLabel(self.loop, text=None,image=imagem_p)
                     label_nublado.place(x=220, y=60)
                     
                 case 'snow':
                     print('neve')
                     self.acess_weather()
-                    imagem_p = PhotoImage(file="./img_climate/neve-removebg-preview.png")      
+                    imagem_p = PhotoImage(file="img_climate/neve-removebg-preview.png")      
                     label_nublado = ctk.CTkLabel(self.loop, text=None,image=imagem_p)
                     label_nublado.place(x=220, y=60)
 
                 case 'hail':
                     print('granizo')
                     self.acess_weather()
-                    imagem_p = PhotoImage(file="./img_climate/neve-removebg-preview.png")
+                    imagem_p = PhotoImage(file="img_climate/neve-removebg-preview.png")
                     label_nublado = ctk.CTkLabel(self.loop, text=None,image=imagem_p)
                     label_nublado.place(x=220, y=60)
 
                 case 'cloudly_night':
                     print('nublado noite ')
                     self.acess_weather()
-                    imagem_p = PhotoImage(file="./img_climate/lua_nublado-removebg-preview.png")
+                    imagem_p = PhotoImage(file="img_climate/lua_nublado-removebg-preview.png")
                     label_nublado = ctk.CTkLabel(self.loop, text=None,image=imagem_p)
                     label_nublado.place(x=220, y=60)
 
                     
                 case 'rain':
                     print('chuva')
-                    imagem_p = PhotoImage(file="./img_climate/chuva-removebg-preview.png")
+                    imagem_p = PhotoImage(file="img_climate/chuva-removebg-preview.png")
                     label_nublado = ctk.CTkLabel(self.loop, text=None,image=imagem_p)
                     label_nublado.place(x=220, y=60)
 
@@ -162,7 +162,7 @@ class Main_climate:
                     print('nublado n')
 
                     self.acess_weather()
-                    imagem_p = PhotoImage(file="./img_climate/nublado-removebg-preview.png")
+                    imagem_p = PhotoImage(file="img_climate/nublado-removebg-preview.png")
                     label_nublado = ctk.CTkLabel(self.loop, text=None,image=imagem_p)
                     label_nublado.place(x=220, y=60)
                     
